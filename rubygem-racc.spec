@@ -3,7 +3,7 @@
 Summary:    Racc is a LALR(1) parser generator
 Name:       rubygem-%{oname}
 Version:    1.4.6
-Release:    %mkrel 1
+Release:    %mkrel 2
 Group:      Development/Ruby
 License:    LGPLv2
 URL:        http://racc.rubyforge.org/
@@ -11,6 +11,7 @@ Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:   rubygems
 BuildRequires: rubygems
+BuildRequires: ruby-devel
 Provides:   rubygem(%{oname}) = %{version}
 
 %description
