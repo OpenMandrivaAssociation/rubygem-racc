@@ -5,7 +5,7 @@ Summary:	Racc is a LALR(1) parser generator
 Name:		rubygem-%{rbname}
 
 Version:	1.4.7
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://i.loveruby.net/en/projects/racc/
