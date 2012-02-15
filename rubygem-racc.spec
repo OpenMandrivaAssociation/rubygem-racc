@@ -1,4 +1,4 @@
-# Generated from racc-1.4.7.gem by gem2rpm5 -*- rpm-spec -*-          
+# Generated from racc-1.4.7.gem by gem2rpm5 -*- rpm-spec -*-
 %define	rbname	racc
 
 Summary:	Racc is a LALR(1) parser generator
@@ -12,7 +12,6 @@ URL:		http://i.loveruby.net/en/projects/racc/
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildRequires:	ruby-devel
-BuildRequires:	rubygem(rake)
 
 %description
 Racc is a LALR(1) parser generator.
