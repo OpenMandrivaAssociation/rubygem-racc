@@ -4,12 +4,12 @@
 Summary:	Racc is a LALR(1) parser generator
 Name:		rubygem-%{rbname}
 
-Version:	1.4.7
-Release:	2
+Version:	1.4.12
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://i.loveruby.net/en/projects/racc/
-Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
+Source0:	http://gems.rubyforge.org/gems/racc-1.4.12.gem
 BuildRequires:	rubygems 
 BuildRequires:	ruby-devel
 
@@ -60,19 +60,3 @@ Documents, RDoc & RI documentation for %{name}.
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.txt
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-
-
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.4.7-2
-+ Revision: 774439
-- remove dependency on rubygem(rake), it's now provided by ruby
-- mass rebuild of ruby packages against ruby 1.9.1
-
-* Fri Jan 27 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.4.7-1
-+ Revision: 769362
-- version update 1.4.7
-
-* Thu Nov 04 2010 Rémy Clouard <shikamaru@mandriva.org> 1.4.6-2mdv2011.0
-+ Revision: 593505
-- import rubygem-racc
-
