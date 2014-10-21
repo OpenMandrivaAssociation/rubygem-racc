@@ -39,19 +39,19 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_install
 
 %files
-%{_bindir}/racc
-%{_bindir}/racc2y
-%{_bindir}/y2racc
+# %{_bindir}/racc
+# %{_bindir}/racc2y
+# %{_bindir}/y2racc
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc2y
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/y2racc
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/pre-setup
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc2y
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/y2racc
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/*.rb
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/pre-setup
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 %{ruby_sitearchdir}/%{rbname}/*.so
 %{_datadir}/gems/doc/racc-1.4.12/rdoc/Array.html
@@ -670,9 +670,9 @@ Documents, RDoc & RI documentation for %{name}.
 %{_datadir}/gems/gems/racc-1.4.12/Manifest.txt
 %{_datadir}/gems/gems/racc-1.4.12/README.ja.rdoc
 %{_datadir}/gems/gems/racc-1.4.12/README.rdoc
-%{_datadir}/gems/gems/racc-1.4.12/bin/racc
-%{_datadir}/gems/gems/racc-1.4.12/bin/racc2y
-%{_datadir}/gems/gems/racc-1.4.12/bin/y2racc
+# %{_datadir}/gems/gems/racc-1.4.12/bin/racc
+# %{_datadir}/gems/gems/racc-1.4.12/bin/racc2y
+# %{_datadir}/gems/gems/racc-1.4.12/bin/y2racc
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/compat.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/debugflags.rb
@@ -685,7 +685,7 @@ Documents, RDoc & RI documentation for %{name}.
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/parser-text.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/parser.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/parserfilegenerator.rb
-%{_datadir}/gems/gems/racc-1.4.12/lib/racc/pre-setup
+# %{_datadir}/gems/gems/racc-1.4.12/lib/racc/pre-setup
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/sourcetext.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/state.rb
 %{_datadir}/gems/gems/racc-1.4.12/lib/racc/statetransitiontable.rb
@@ -696,7 +696,7 @@ Documents, RDoc & RI documentation for %{name}.
 %{_datadir}/gems/gems/racc-1.4.12/rdoc/ja/debug.ja.rdoc
 %{_datadir}/gems/gems/racc-1.4.12/rdoc/ja/grammar.ja.rdoc
 %{_datadir}/gems/gems/racc-1.4.12/rdoc/ja/parser.ja.rdoc
-%{_datadir}/gems/specifications/racc-1.4.12.gemspec
+# %{_datadir}/gems/specifications/racc-1.4.12.gemspec
 
 
 %files doc
