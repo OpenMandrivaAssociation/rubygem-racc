@@ -24,13 +24,13 @@ box.
 %{_bindir}/racc
 %{_bindir}/racc2y
 %{_bindir}/y2racc
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc2y
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/y2racc
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/racc/pre-setup
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%{gem_dir}/gems/%{rbname}-%{version}/bin/racc
+%{gem_dir}/gems/%{rbname}-%{version}/bin/racc2y
+%{gem_dir}/gems/%{rbname}-%{version}/bin/y2racc
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/racc/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/racc/pre-setup
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 %{ruby_sitearchdir}/%{rbname}/*.so
 #---------------------------------------------------------
 
@@ -44,11 +44,11 @@ BuildArch:	noarch
 Documents, RDoc & RI documentation for %{name}.
 
 %files doc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.txt
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/rdoc/en/*.rdoc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/rdoc/ja/*.ja.rdoc
+%doc %{gem_dir}/gems/%{rbname}-%{version}/*.rdoc
+%doc %{gem_dir}/gems/%{rbname}-%{version}/*.txt
+%doc %{gem_dir}/doc/%{rbname}-%{version}
+%doc %{gem_dir}/gems/%{rbname}-%{version}/rdoc/en/*.rdoc
+%doc %{gem_dir}/gems/%{rbname}-%{version}/rdoc/ja/*.ja.rdoc
 #---------------------------------------------------------
 
 %prep
@@ -60,8 +60,8 @@ Documents, RDoc & RI documentation for %{name}.
 %install
 %gem_install
 
-perl -pi -e "s|/usr/local/bin/ruby|/usr/bin/ruby|" %{buildroot}%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/racc2y
-perl -pi -e "s|/usr/local/bin/ruby|/usr/bin/ruby|" %{buildroot}%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/y2racc
+perl -pi -e "s|/usr/local/bin/ruby|/usr/bin/ruby|" %{buildroot}%{gem_dir}/gems/%{rbname}-%{version}/bin/racc2y
+perl -pi -e "s|/usr/local/bin/ruby|/usr/bin/ruby|" %{buildroot}%{gem_dir}/gems/%{rbname}-%{version}/bin/y2racc
 
 
 
