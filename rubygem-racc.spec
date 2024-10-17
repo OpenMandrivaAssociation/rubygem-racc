@@ -8,7 +8,7 @@ Version:	1.4.12
 Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://i.loveruby.net/en/projects/racc/
+URL:		https://i.loveruby.net/en/projects/racc/
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildRequires:	ruby-devel
